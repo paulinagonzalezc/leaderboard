@@ -1,0 +1,86 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.page-title {
+  text-align: center;
+  margin: 40px;
+}
+
+.two-columns-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 50px;
+}
+
+.column1-container {
+  min-width: 290px;
+  display: flex;
+  row-gap: 20px;
+  flex-direction: column;
+}
+
+.refresh-button,
+.submit-button {
+  border: none;
+  height: 30px;
+  width: 70px;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0 1px 4px;
+  cursor: pointer;
+}
+
+.scores-title-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+
+.recent-scores {
+  font-size: 25px;
+}
+
+.score-item {
+  display: flex;
+  flex-direction: row;
+}
+
+.score {
+  background-color: #f1f1f1;
+  padding: 6px;
+}
+
+.score:nth-child(even) {
+  background-color: rgb(225, 225, 225);
+}
+
+.column2-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  min-width: 290px;
+}
+
+.add-title {
+  font-size: 25px;
+}
+
+.name-input,
+.score-input {
+  height: 30px;
+  width: 280px;
+  padding: 5px;
+  font-family: 'Montserrat', sans-serif;
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  font-size: 15px;
+  box-shadow: rgb(0 0 0 / 16%) 0 1px 4px;
+}
+
+.button-wrap {
+  display: flex;
+  justify-content: end;
+}
