@@ -3,9 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wbpack Exercise</title>
+    <title>Leader Board</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1>Hello webpack!</h1>
+    <h1 class="page-title">Leader Board</h1>
+    <div class="two-columns-container">
+      <div class="column1-container">
+        <div class="scores-title-container">
+          <div class="recent-scores">Recent Scores</div>
+          <button class="refresh-button">Refresh</button>
+        </div>
+        <div class="scores-table">
+          <div class="score">Name: 100</div>
+          <div class="score">Name: 20</div>
+          <div class="score">Name: 50</div>
+          <div class="score">Name: 78</div>
+          <div class="score">Name: 125</div>
+          <div class="score">Name: 77</div>
+          <div class="score">Name: 42</div>
+        </div>
+      </div>
+      <div class="column2-container">
+        <div class="add-title">Add your score</div>
+        <form action="">
+          <input
+            type="text"
+            class="name-input"
+            placeholder="Your name"
+          /><br /><br />
+          <input
+            type="text"
+            class="score-input"
+            placeholder="Your score"
+          /><br /><br />
+          <div class="button-wrap">
+            <button type="submit" class="submit-button" value="Submit">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
