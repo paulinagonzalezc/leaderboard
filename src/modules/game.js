@@ -1,8 +1,8 @@
-class game {
+class Game {
   constructor(name, score) {
     this.name = name;
     this.score = score;
   }
 }
 
-export default game;
+export default Game;

@@ -1,4 +1,5 @@
 import './style.css';
-import game from './modules/game.js';
+// eslint-disable-next-line no-unused-vars
+import Game from './modules/game.js';
 
-new game();
+// const game = new Game();

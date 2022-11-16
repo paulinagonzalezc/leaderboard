@@ -48,13 +48,13 @@ body {
   flex-direction: row;
 }
 
-.score:nth-child(even) {
-  background-color: rgb(225, 225, 225);
-}
-
 .score {
   background-color: #f1f1f1;
   padding: 6px;
+}
+
+.score:nth-child(even) {
+  background-color: rgb(225, 225, 225);
 }
 
 .column2-container {
