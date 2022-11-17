@@ -32,7 +32,10 @@ const displayScores = () => {
     const data = await response.json();
     data.result.forEach((addedScore) => {
       scores.innerHTML += `
-                <div class="score">${addedScore.user}: ${addedScore.score}</div>`;
+                <div class="score">
+                    <div>${addedScore.user}:</div>
+                    <div>${addedScore.score}</div>
+                </div>`;
     });
   };
   fetchScores();
