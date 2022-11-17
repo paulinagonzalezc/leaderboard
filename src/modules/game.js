@@ -1,11 +1,11 @@
 const apiKey = 'gQxRXsSqZhbfITVQg4H7';
 const apiUrl = `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${apiKey}/scores`;
 
-const postScore = () => {
+const postScore = async () => {
   const name = document.querySelector('#name').value;
   const score = document.querySelector('#score').value;
 
-  fetch(apiUrl, {
+  await fetch(apiUrl, {
     method: 'Post',
     headers: {
       'Content-Type': 'application/json',
@@ -25,7 +25,7 @@ const postScore = () => {
 };
 
 const displayScores = () => {
-  async function fetchScores() {
+  const fetchScores = async () => {
     const scores = document.querySelector('#scores-table');
     scores.innerHTML = '';
     const response = await fetch(apiUrl);
@@ -34,7 +34,7 @@ const displayScores = () => {
       scores.innerHTML += `
                 <div class="score">${addedScore.user}: ${addedScore.score}</div>`;
     });
-  }
+  };
   fetchScores();
 };
 
