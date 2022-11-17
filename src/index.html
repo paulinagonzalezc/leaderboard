@@ -17,7 +17,7 @@
       <div class="column1-container">
         <div class="scores-title-container">
           <div class="recent-scores">Recent Scores</div>
-          <button class="refresh-button">Refresh</button>
+          <button class="refresh-button" id="refresh">Refresh</button>
         </div>
         <div class="scores-table">
           <div class="score">Name: 100</div>
@@ -36,14 +36,21 @@
             type="text"
             class="name-input"
             placeholder="Your name"
+            id="name"
           /><br /><br />
           <input
             type="text"
             class="score-input"
             placeholder="Your score"
+            id="score"
           /><br /><br />
           <div class="button-wrap">
-            <button type="submit" class="submit-button" value="Submit">
+            <button
+              type="submit"
+              class="submit-button"
+              value="Submit"
+              id="add-score"
+            >
               Submit
             </button>
           </div>

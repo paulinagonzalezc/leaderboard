@@ -1,5 +1,13 @@
 import './style.css';
 // eslint-disable-next-line no-unused-vars
-import Game from './modules/game.js';
+import postScore from './modules/game.js';
 
-// const game = new Game();
+// Event listener to add a score
+document.querySelector('#add-score').addEventListener('click', (e) => {
+  e.preventDefault();
+  console.log('add score listener');
+  postScore();
+});
+
+// Event listener to show stored scores
+document.querySelector('#refresh').addEventListener('click');
