@@ -5,9 +5,6 @@ const postScore = () => {
   const name = document.querySelector('#name').value;
   const score = document.querySelector('#score').value;
 
-  console.log(name);
-  console.log(score);
-
   fetch(apiUrl, {
     method: 'Post',
     headers: {
@@ -15,7 +12,7 @@ const postScore = () => {
     },
     body: JSON.stringify({
       user: name,
-      score: score,
+      score,
     }),
   })
     .then((response) => response.json())
@@ -27,6 +24,18 @@ const postScore = () => {
     });
 };
 
-const displayScores = () => {};
+const displayScores = () => {
+  async function fetchScores() {
+    const scores = document.querySelector('#scores-table');
+    scores.innerHTML = '';
+    const response = await fetch(apiUrl);
+    const data = await response.json();
+    data.result.forEach((addedScore) => {
+      scores.innerHTML += `
+                <div class="score">${addedScore.user}: ${addedScore.score}</div>`;
+    });
+  }
+  fetchScores();
+};
 
-export default postScore;
+export { postScore, displayScores };
