@@ -12,7 +12,7 @@
 
 ## Live Demo
 
-Currently not available.
+https://paulinagonzalezc.github.io/leaderboard/dist/
 
 ## Getting Started
 

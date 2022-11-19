@@ -43,6 +43,11 @@ body {
   border: 1px solid #1fc9fc;
 }
 
+.refresh-button:hover,
+.submit-button:hover {
+  background-color: #743ad5;
+}
+
 .scores-title-container {
   display: flex;
   justify-content: space-between;
@@ -70,10 +75,15 @@ body {
   margin: 7px;
   box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
   background: radial-gradient(circle, rgba(40, 164, 221, 1) 0%, rgba(44, 75, 155, 1) 100%);
+  transition: transform 0.2s;
 }
 
 .score:nth-child(even) {
   background: radial-gradient(circle, rgba(153, 75, 199, 1) 0%, rgba(71, 44, 155, 1) 100%);
+}
+
+.score:hover {
+  transform: scale(1.05);
 }
 
 .column2-container {
